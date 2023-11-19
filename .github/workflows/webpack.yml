@@ -24,6 +24,7 @@ jobs:
 
     - name: Build
       run: |
+        npm audit fix
         npm install pnpm
         cd service
         pnpm install
